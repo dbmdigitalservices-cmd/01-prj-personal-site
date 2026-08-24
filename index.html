@@ -2,10 +2,125 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Personal Site</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Dawson Morse | Web Developer</title>
   <link rel="stylesheet" href="style.css">
-</head>
+</
 <body>
-  <!-- Add your HTML content here -->
+  <!-- The header gives visitors a quick way to move around the page. -->
+  <header class="site-header">
+    <a class="logo" href="#top">DM<span>.</span></a>
+    <nav aria-label="Main navigation">
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-button" href="#contact">Let's talk <span aria-hidden="true">&#8599;</span></a>
+  </header>
+
+  <main id="top">
+    <!-- The hero introduces the kind of work this portfolio will showcase. -->
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="dot"></span> Web development student</p>
+        <h1>Projects that<br><em>solve</em> real<br>problems.</h1>
+        <p class="hero-text">I create thoughtful, useful websites that make everyday tasks feel a little easier.</p>
+        <a class="primary-button" href="#projects">See my projects <span aria-hidden="true">&#8595;</span></a>
+      </div>
+      <div class="hero-image-wrap">
+        <img src="img/hero-bg.jpg" alt="A bright workspace with a laptop and notebook">
+        <p class="image-note">01 / 04<br><span>Selected work</span></p>
+      </div>
+    </section>
+
+    <!-- About section introduces the developer. -->
+    <section class="about section-width" id="about">
+      <div class="about-content">
+        <img src="img/Headshot.jpg" alt="Dawson Morse" class="about-image">
+        <div class="about-text">
+          <p class="eyebrow">About me</p>
+          <h2>A personal space for sharing <em>skills</em>, learning, and the work behind the screen.</h2>
+          <p>I'm a web development student passionate about creating thoughtful, useful websites that solve real problems. I focus on building digital experiences that are easy to use and make everyday tasks feel a little easier.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured projects can be replaced with future class projects. -->
+    <section class="projects section-width" id="projects">
+      <div class="section-heading">
+        <p class="eyebrow">A few things I've made</p>
+        <h2>Featured <em>projects</em></h2>
+        <p class="section-intro">A growing collection of experiments, ideas, and useful digital experiences.</p>
+      </div>
+
+      <div class="project-list">
+        <article class="project-card project-card-wide">
+          <img src="img/laptop.jpg" alt="Laptop on a desk showing a website project">
+          <div class="project-details">
+            <p class="project-number">01</p>
+            <h3>Local Loop</h3>
+            <p>A simple guide that helps people discover independent shops and makers in their neighborhood.</p>
+            <a class="text-link" href="#contact">View project <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-small">
+          <img src="img/" alt="Project 03">
+          <div class="project-details">
+            <p class="project-number">02</p>
+            <h3>Project Title</h3>
+            <p>Add a description of your project here.</p>
+            <a class="text-link" href="#contact">View project <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-small">
+          <img src="img/" alt="Project 04">
+          <div class="project-details">
+            <p class="project-number">03</p>
+            <h3>Project Title</h3>
+            <p>Add a description of your project here.</p>
+            <a class="text-link" href="#contact">View project <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </article>
+
+        <article class="project-card project-card-small">
+          <img src="img/" alt="Project 05">
+          <div class="project-details">
+            <p class="project-number">04</p>
+            <h3>Project Title</h3>
+            <p>Add a description of your project here.</p>
+            <a class="text-link" href="#contact">View project <span aria-hidden="true">&#8599;</span></a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- This form gives potential clients a clear way to start a conversation. -->
+    <section class="contact section-width" id="contact">
+      <div class="contact-copy">
+        <p class="eyebrow">Have an idea?</p>
+        <h2>Let's build<br>something <em>useful.</em></h2>
+        <p>Tell me a little about what you want to make. I would love to hear what problem you are trying to solve.</p>
+        <a class="email-link" href="mailto:dbmdigitalservices@gmail.com">dbmdigitalservices@gmail.com</a>
+      </div>
+      <form class="contact-form">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" placeholder="Jane Smith" required>
+
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+
+        <label for="description">What would you like to build?</label>
+        <textarea id="description" name="description" rows="5" placeholder="Tell me about your idea..." required></textarea>
+
+        <button class="primary-button" type="submit">Send message <span aria-hidden="true">&#8599;</span></button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer section-width">
+    <p>Dawson Morse <span>© 2024</span></p>
+    <a href="#top">Back to top &#8593;</a>
+  </footer>
 </body>
 </html>

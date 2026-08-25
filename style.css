@@ -161,7 +161,7 @@ h2 em {
 	width: 100%;
 }
 
-main > section {
+main > section:not(.hero) {
 	border-top: 1px solid var(--line);
 }
 
@@ -173,12 +173,20 @@ main > section {
 	padding-top: 70px;
 }
 
+.about {
+	padding: 100px 0 70px;
+}
+
 .about-image {
 	border: 1px solid var(--ink);
 	display: block;
 	height: auto;
 	margin: 0 auto;
 	width: 25%;
+}
+
+.about-text h2 {
+	margin-bottom: 24px;
 }
 
 .image-note {

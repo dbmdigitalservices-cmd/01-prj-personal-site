@@ -1,11 +1,11 @@
 /* Basic colors make the design easy to change later. */
 :root {
 	--ink: #17211f;
-	--cream: #a8bdeb;
-	--coral: #fc0101;
+	--cream: #cbdbff;
+	--coral: #12a8e4a2;
 	--sage: #dce5d7;
 	--muted: #68716d;
-	--line: #d7d7ca;
+	--line: #000;
 }
 
 * {
@@ -75,7 +75,7 @@ nav a {
 	align-items: center;
 	display: flex;
 	gap: 8%;
-	margin: 45px auto 120px;
+	margin: 45px auto 50px;
 	max-width: 1160px;
 	width: 88%;
 }
@@ -157,7 +157,7 @@ h2 em {
 .hero-image-wrap img {
 	display: block;
 	height: 530px;
-	object-fit: cover;
+	object-fit: contain;
 	width: 100%;
 }
 
@@ -174,7 +174,7 @@ main > section:not(.hero) {
 }
 
 .about {
-	padding: 100px 0 70px;
+	padding: 50px 0 70px;
 }
 
 .about-image {
@@ -250,10 +250,9 @@ main > section:not(.hero) {
 }
 
 .section-heading {
-	align-items: end;
-	display: flex;
-	justify-content: space-between;
+	display: block;
 	margin-bottom: 45px;
+	text-align: center;
 }
 
 h2 {
@@ -264,7 +263,7 @@ h2 {
 }
 
 .section-intro {
-	margin: 0;
+	margin: 25px auto 0;
 }
 
 .project-list {

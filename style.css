@@ -2,7 +2,7 @@
 :root {
 	--ink: #17211f;
 	--cream: #a8bdeb;
-	--coral: #f26b52;
+	--coral: #fc0101;
 	--sage: #dce5d7;
 	--muted: #68716d;
 	--line: #d7d7ca;
@@ -43,7 +43,7 @@ a {
 }
 
 .logo {
-	font-size: 1.45rem;
+	font-size: 1.8rem;
 	font-weight: bold;
 	letter-spacing: 1px;
 }
@@ -55,7 +55,7 @@ em {
 
 nav a {
 	font-family: Arial, sans-serif;
-	font-size: 0.75rem;
+	font-size: 0.95rem;
 	margin: 0 14px;
 	text-transform: uppercase;
 }
@@ -66,7 +66,7 @@ nav a {
 	color: var(--cream);
 	display: inline-block;
 	font-family: Arial, sans-serif;
-	font-size: 0.75rem;
+	font-size: 0.95rem;
 	padding: 14px 18px;
 	text-transform: uppercase;
 }
@@ -161,6 +161,26 @@ h2 em {
 	width: 100%;
 }
 
+main > section {
+	border-top: 1px solid var(--line);
+}
+
+.about,
+.skills,
+.projects,
+.services,
+.contact {
+	padding-top: 70px;
+}
+
+.about-image {
+	border: 1px solid var(--ink);
+	display: block;
+	height: auto;
+	margin: 0 auto;
+	width: 25%;
+}
+
 .image-note {
 	background: var(--coral);
 	bottom: 0;
@@ -177,6 +197,44 @@ h2 em {
 
 .image-note span {
 	color: var(--cream);
+}
+
+.skills {
+	padding-bottom: 120px;
+}
+
+.skill-list,
+.service-list {
+	display: flex;
+	gap: 28px;
+}
+
+.skill-item,
+.service-item {
+	border-top: 1px solid var(--line);
+	flex: 1;
+	padding-top: 24px;
+}
+
+.skill-item h3,
+.service-item h3 {
+	margin-bottom: 12px;
+}
+
+.skill-icon {
+	color: var(--coral);
+	font-family: Arial, sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: 20px;
+}
+
+.skill-item > p:not(.skill-icon),
+.service-item p {
+	color: var(--muted);
+	font-family: Arial, sans-serif;
+	font-size: 0.85rem;
+	line-height: 1.5;
+	max-width: 300px;
 }
 
 .projects {
@@ -267,6 +325,12 @@ h3 {
 	font-family: Arial, sans-serif;
 	font-size: 0.72rem;
 	text-transform: uppercase;
+}
+
+.services {
+	background: var(--sage);
+	margin-bottom: 120px;
+	padding: 70px 8%;
 }
 
 .contact {
@@ -375,8 +439,15 @@ h3 {
 
 	.section-heading,
 	.project-list,
+	.skill-list,
+	.service-list,
 	.contact {
 		display: block;
+	}
+
+	.skill-item,
+	.service-item {
+		margin-top: 35px;
 	}
 
 	.section-intro {
@@ -390,6 +461,11 @@ h3 {
 	}
 
 	.contact {
+		padding: 45px 8%;
+	}
+
+	.services {
+		margin-bottom: 80px;
 		padding: 45px 8%;
 	}
 

@@ -211,6 +211,14 @@ main > section:not(.hero) {
 	padding-bottom: 120px;
 }
 
+.skills .section-heading {
+	text-align: left;
+}
+
+.skills .section-intro {
+	margin-left: 0;
+}
+
 .skill-list,
 .service-list {
 	display: flex;
@@ -284,8 +292,9 @@ h2 {
 
 .project-card-small {
 	background: #e8d9c9;
+	flex: 1;
 	margin-top: 90px;
-	width: 38%;
+	width: auto;
 }
 
 .project-card img {

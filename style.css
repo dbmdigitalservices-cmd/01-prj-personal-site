@@ -357,6 +357,10 @@ h3 {
 	text-transform: uppercase;
 }
 
+.email-link {
+	text-transform: lowercase;
+}
+
 .services {
 	background: var(--sage);
 	border-top: 0;

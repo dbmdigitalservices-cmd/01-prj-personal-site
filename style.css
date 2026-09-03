@@ -225,7 +225,12 @@ main > section:not(.hero) {
 	margin-left: 0;
 }
 
-.skill-list,
+.skill-list {
+	align-items: flex-start;
+	display: flex;
+	gap: 28px;
+}
+
 .service-list {
 	display: flex;
 	gap: 28px;
@@ -301,7 +306,7 @@ h2 {
 }
 
 .project-list {
-	align-items: flex-start;
+	align-items: stretch;
 	display: flex;
 	gap: 28px;
 }
@@ -318,20 +323,21 @@ h2 {
 
 .project-card-small {
 	flex: 1;
-	margin-top: 90px;
 	width: auto;
 }
 
 .project-card img {
-	aspect-ratio: 1 / 1;
 	background: inherit;
 	display: block;
-	height: auto;
-	object-fit: contain;
+	height: 260px;
+	object-fit: cover;
 	width: 100%;
 }
 
 .project-details {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
 	padding: 25px;
 }
 
@@ -363,6 +369,10 @@ h3 {
 	font-family: Arial, sans-serif;
 	font-size: 0.72rem;
 	text-transform: uppercase;
+}
+
+.project-details .text-link {
+	margin-top: auto;
 }
 
 .email-link {
@@ -488,9 +498,12 @@ h3 {
 		display: block;
 	}
 
-	.skill-item,
 	.service-item {
 		margin-top: 35px;
+	}
+
+	.skill-list {
+		gap: 35px;
 	}
 
 	.section-intro {
@@ -499,7 +512,6 @@ h3 {
 
 	.project-card-wide,
 	.project-card-small {
-		margin-top: 35px;
 		width: 100%;
 	}
 
@@ -615,23 +627,16 @@ h1 {
 	flex-direction: column;
 }
 
-.skill-item,
 .service-item {
 	margin-top: 35px;
 }
 
-.skill-item:first-child,
 .service-item:first-child {
 	margin-top: 0;
 }
 
 .project-card-small {
-	margin-top: 35px;
 	width: 100%;
-}
-
-.project-card-small:first-child {
-	margin-top: 0;
 }
 
 .services {
@@ -709,7 +714,7 @@ h1 {
 	}
 
 	.project-list {
-		align-items: flex-start;
+		align-items: stretch;
 	}
 
 	.project-card-small {

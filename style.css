@@ -275,6 +275,14 @@ main > section:not(.hero) {
 	margin-left: 0;
 }
 
+.services .section-heading {
+	text-align: left;
+}
+
+.services .section-intro {
+	margin-left: 0;
+}
+
 .section-heading {
 	display: block;
 	margin-bottom: 45px;

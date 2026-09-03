@@ -226,7 +226,7 @@ main > section:not(.hero) {
 }
 
 .skill-list {
-	align-items: flex-start;
+	align-items: start;
 	display: flex;
 	gap: 28px;
 }
